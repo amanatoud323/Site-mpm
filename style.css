@@ -1,0 +1,390 @@
+/* style de la page d'accueil */
+  body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9fbfd;
+      color: #333;
+     flex: auto;
+      
+  }
+  header {
+      background-color: #1b365d; /* Bleu institutionnel */
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+}
+  header .logo {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: #e67e22; /* Touche orange dynamique */
+}
+  nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+      transition: color 0.3s;
+}
+  nav a:hover, nav a.active {
+      color: #e67e22;
+}
+  .hero {
+     /* Style de la section principale avec image de fond et voile de couleur */
+    /* 1. Définit l'image de fond, sans répétition, centrée et couvrant tout l'espace */
+    background: 
+        linear-gradient(rgba(17, 34, 56, 0.8), rgba(17, 34, 56, 0.8)), /* Voile bleu semi-transparent par-dessus */
+        url('WhatsApp Image 2026-08-04 at 14.44.14 (1).jpeg') no-repeat center center;
+
+    background-size: cover; /* S'assure que l'image couvre bien tout le bloc */
+    
+    /* Conserve les autres propriétés */
+    color: white;
+    text-align: center;
+    padding: 150px 0; /* Ajuste selon tes besoins pour plus ou moins de hauteur */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+}
+.btn {
+    background-color: #e67e22;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #112238;
+    color: #aaa;
+    position: relative;
+    margin-top: 50px;
+    bottom: 0;
+    width: 100%;
+}
+/* Définition du mouvement de flottement */
+@keyframes flotter {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-8px); /* Le bouton monte de 8 pixels */
+    }
+    100% {
+        transform: translateY(0px); /* Il redescend à sa position initiale */
+    }
+}
+
+/* Application de l'animation sur ton bouton */
+.btn {
+    background-color: #e67e22;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    
+    /* Ligne à ajouter pour activer l'animation */
+    animation: flotter 2s ease-in-out infinite; 
+}
+/*l'Animation des liens */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+    position: relative; /* Nécessaire pour positionner l'effet */
+    transition: color 0.3s ease;
+}
+
+/* Effet de couleur et léger zoom au survol */
+nav a:hover, nav a.active {
+    color: #e67e22;
+    transform: scale(1.05); /* Grossit très légèrement de 5% */
+}
+
+/* Petite barre élégante qui apparaît sous le lien au survol */
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #e67e22;
+    transition: width 0.3s ease-in-out;
+}
+
+nav a:hover::after, nav a.active::after {
+    width: 100%; /* La ligne s'étale sur toute la largeur du texte */
+}
+/* --- Styles de base (Ordinateurs / Grands écrans) --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.hero h1 {
+    font-size: 38px;
+}
+
+/* --- Pour les tablettes et les petits écrans (max 768px de large) --- */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column; /* Empile le logo et le menu verticalement */
+        padding: 15px;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav a {
+        margin: 0 10px; /* Resserre les liens du menu */
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 50px 15px; /* Réduit les marges intérieures */
+    }
+
+    .hero h1 {
+        font-size: 26px; /* Réduit la taille du titre pour qu'il ne dépasse pas de l'écran */
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+}
+
+
+/* style de la page à propos */
+.about-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    color: #333;
+}
+
+.about-container h1 {
+    color: #1b365d;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.about-section {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+    border-left: 5px solid #e67e22; /* Touche orange du parti */
+
+}
+
+.about-section h2 {
+    color: #1b365d;
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.about-section p {
+    line-height: 1.6;
+    color: #555;
+    font-size: 16px;
+}
+
+/* Grille des valeurs */
+.values-grid {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    }
+
+.value-card {
+    flex: 1;
+    min-width: 250px;
+    background: #f9fbfd;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #e1e8ed;
+}
+
+.value-card h3 {
+    color: #e67e22;
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.value-card p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/* Organisation du bloc logo pour aligner l'image et le texte */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espace entre l'image et le texte */
+}
+
+/* Taille de ton logo (tu peux modifier la hauteur selon tes besoins) */
+.logo-img {
+    height: 40px; /* Ajuste la hauteur de ton image (ex: 35px ou 40px) */
+    width: auto;  /* Conserve les proportions d'origine de l'image */
+    text-align: left;
+}
+
+/* Taille et forme de ton logo */
+.logo-img {
+    height: 60px;       /* Augmente un peu la taille pour qu'il soit plus visible */
+    width: 60px;        /* Force la largeur à être identique à la hauteur */
+    object-fit: cover;  /* Permet de recadrer l'image si elle n'est pas parfaitement carrée pour qu'elle remplisse le cercle */
+    border-radius: 50%; /* C'est la magie : cette valeur de 50% transforme n'importe quel carré en cercle ! */
+    border: 2px solid #e67e22; /* Optionnel : Ajoute un petit contour orange pour faire plus pro */
+}
+/* --- Styles spécifiques pour la page Contact --- */
+.contact-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.contact-container h1 {
+    color: #112238;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact-intro {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Grille pour séparer le formulaire et les infos côte à côte */
+.contact-grid {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #112238;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #e67e22; /* Passe en orange au clic */
+    box-shadow: 0 0 5px rgba(230, 126, 34, 0.3);
+}
+
+/* Bouton d'envoi */
+.btn-envoyer {
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.btn-envoyer:hover {
+    background-color: #d35400;
+}
+
+/* Bloc des informations de contact */
+.contact-info {
+    flex: 1;
+    min-width: 250px;
+    background: #f9fbfd;
+    padding: 30px;
+    border-radius: 6px;
+    border-left: 5px solid #112238;
+}
+
+.contact-info h2 {
+    color: #112238;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    color: #444;
+    line-height: 1.5;
+}
+
+.social-note {
+    margin-top: 30px;
+    font-style: italic;
+    color: #666;
+    font-size: 14px;
+}
+
+/*l'effet de survol des blocs de la page à propos*/
+    /* Animation fluide pour les sections de la page À propos */
+.about-section {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-left-width 0.3s ease;
+}
+
+/* Effet lorsque la souris survole le bloc */
+.about-section:hover {
+    transform: translateY(-5px);                  /* Soulève légèrement le bloc vers le haut */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);    /* Accentue l'ombre portée pour donner du relief */
+    border-left: 8px solid #e67e22;                /* Élargit la bordure orange de gauche */
+}
