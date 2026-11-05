@@ -1,59 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>site_officiel MPM</title>
-    <link rel="stylesheet" href="style.css">
+    <title>À propos - AFROGEC - SARL</title>
+    <link rel="stylesheet" href="Style.css">
+    <!-- Icônes FontAwesome pour Facebook et WhatsApp -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-     <!-- En-tête / Barre de navigation (identique à l'accueil) -->
-    <header>
-        <div class="logo">Mouvement du Peuple en Marche(MPM)</div>
-        <nav>
-            <a href="accueil.html">Accueil</a>
-            <a href="à propos.html" class="active">À propos</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+
+    <!-- EN-TÊTE FIXE -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="accueil.html">
+                    <img src="25a3406c-d099-4370-800b-346df67357d8.jfif" alt="Logo AFROGEC SARL">
+                </a>
+            </div>
+
+            <!-- Bouton Hamburger Mobile -->
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="accueil.html" target="_blank">L'Accueil</a></li>
+                <li><a href="à propos.html" target="_blank">À propos</a></li>
+                <li><a href="services.html" target="_blank">Nos Services</a></li>
+                <li><a href="realisations.html" target="_blank">Nos Réalisations</a></li>
+                <li><a href="contact.html" target="_blank">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Contenu Principal de la page À propos -->
-    <main class="about-container">
-        <h1>À propos du Mouvement (MPM)</h1>
-        
-        <section class="about-section">
-            <h2>Notre Objet</h2>
-            <p>Le <strong>Mouvement du Peuple en Marche (MPM)</strong> est un parti politique naissant dont l'objet principal est de refonder l'action publique en partant des aspirations profondes des citoyens. Notre engagement premier est de réorganiser, dynamiser et valoriser l'intérieur du pays pour offrir à chaque région les mêmes opportunités de développement.</p>
-        </section>
-
-        <section class="about-section">
-            <h2>Notre Vision</h2>
-            <p>Nous croyons fermement qu'un pays ne peut se développer de manière harmonieuse en ne concentrant ses efforts que sur les grands centres urbains. Le MPM se positionne comme l'ambition d'un rééquilibrage territorial fort, favorisant l'accès aux infrastructures de base, à l'éducation, à la santé et à l'autonomie économique pour les populations des zones intérieures.</p>
-        </section>
-
-        <section class="about-section">
-            <h2>Nos Valeurs Fondatrices</h2>
-            <div class="values-grid">
-                <div class="value-card">
-                    <h3>Proximité</h3>
-                    <p>Être à l'écoute constante du terrain et des réalités vécues par les citoyens au quotidien.</p>
-                </div>
-                <div class="value-card">
-                    <h3>Justice Sociale</h3>
-                    <p>Garantir l'équité et l'accès aux droits et aux ressources pour l'ensemble de la population.</p>
-                </div>
-                <div class="value-card">
-                    <h3>Transparence</h3>
-                    <p>Placer l'intégrité et la clarté au cœur de la gouvernance et de notre démarche politique.</p>
-                </div>
+    <!-- CONTENU PRINCIPAL : À PROPOS -->
+    <main>
+        <!-- En-tête de la page -->
+        <section class="page-header">
+            <div class="hero-content">
+                <h1>À propos d'AFROGEC - SARL</h1>
+                <p>Découvrez notre histoire, nos associés, nos partenaires et nos équipements de pointe.</p>
             </div>
         </section>
-    </main>
 
-    <!-- Pied de page -->
-    <footer>
-        <p>&copy; 2026 MPM - Tous droits réservés.</p>
-    </footer>
+        <!-- Section Historique / Présentation -->
+        <section class="about-section">
+            <div class="container">
+                <h2>Notre Histoire & Nos 20 Ans d'Expérience</h2>
+                <p>
+                     la société <strong>AFROGEC - SARL</strong> ( Africaine de Générale Construction) 
+                    s'est bâtie au fil des années une solide réputation d'excellence et de fiabilité dans le secteur du BTP. Avec <strong>20 ans d'expertise</strong>,
+                     nous intervenons sur des projets de construction variés, allant du résidentiel aux grands travaux d'infrastructure.
+                </p>
+            </div>
+        </section>
+
+  <!-- Section Associés & Direction -->
+  <section class="associes-section">
+    <h2>Nos Associés & Direction</h2>
+    <div class="associes-grid">
+      <!-- Directeur Général & Associé 1 -->
+      <div class="associe-card">
+        <div class="associe-img-wrapper">
+          <img src="WhatsApp Image 2026-11-05 at 14.42.04.jpeg" alt="Directeur Général et Associé">
+        </div>
+        <h3>Mamadou baïlo Diallo</h3>
+        <p class="role">Directeur Général & Co-fondateur </p>
+        <p>Pilotage stratégique et vision à long terme pour bâtir l'avenir de l'entreprise.</p>
+      </div>
+  
+      <!-- Associé 2 -->
+      <div class="associe-card">
+        <div class="associe-img-wrapper">
+          <img src="images/associe2.jpg" alt="Deuxième Associé">
+        </div>
+        <h3>Mamadou alpha Diallo</h3>
+        <p class="role">Directeur & Co-fondateur</p>
+        <p>Supervision des opérations sur le terrain et suivi rigoureux de chaque chantier.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Section Partenaire -->
+  <section class="partenaires-section">
+    <h2>Nos Partenaires</h2>
+    <div class="partenaire-single">
+      <img src="images/logo-partenaire.png" alt="Logo Partenaire">
+      <h3>ASEKMA</h3>
+      <p>Ils nous font confiance et collaborent avec nous sur nos différents chantiers.</p>
+    </div>
+  </section>
+  
+  <!-- Section Parc d'Engins & Vidéos -->
+  <section class="parc-engins-section">
+    <h2>Quelques Engins & Équipements</h2>
     
+    <!-- Galerie Photos Engins -->
+    <div class="engins-gallery">
+      <div class="engin-card">
+        <img src="images/WhatsApp Image 2026-11-05 at 12.00.26.jpeg" alt="Pelle hydraulique sur chantier">
+        <div class="engin-info">
+          <h4>Pelle Hydraulique</h4>
+          <p>Capacité d'excavation lourde et terrassement.</p>
+        </div>
+      </div>
+      
+      <div class="engin-card">
+        <img src="images/WhatsApp Image 2026-11-05 at 12.00.25.jpeg" alt="Bulldozer de nivellement">
+        <div class="engin-info">
+          <h4>Bulldozer D6</h4>
+          <p>Préparation des sols et réaménagement de terrains.</p>
+        </div>
+      </div>
+  
+      <div class="engin-card">
+        <img src="images/WhatsApp Image 2026-11-05 at 11.13.44.jpeg" alt="Camion benne de transport">
+        <div class="engin-info">
+          <h4>Camion Benne 20t</h4>
+          <p>Transport de matériaux de construction et agrégats.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="engins-gallery">
+        <div class="engin-card">
+          <img src="images/WhatsApp Image 2026-11-05 at 11.13.43.jpeg" alt="Pelle hydraulique sur chantier">
+          <div class="engin-info">
+            <h4>Pelle Hydraulique</h4>
+            <p>Capacité d'excavation lourde et terrassement.</p>
+          </div>
+        </div>
+        
+        <div class="engin-card">
+          <img src="images/WhatsApp Image 2026-11-05 at 12.00.23.jpeg" alt="Bulldozer de nivellement">
+          <div class="engin-info">
+            <h4>Bulldozer D6</h4>
+            <p>Préparation des sols et réaménagement de terrains.</p>
+          </div>
+        </div>
+    
+        <div class="engin-card">
+          <img src="images/WhatsApp Image 2026-11-05 at 11.13.47.jpeg" alt="Camion benne de transport">
+          <div class="engin-info">
+            <h4>Camion Benne 20t</h4>
+            <p>Transport de matériaux de construction et agrégats.</p>
+          </div>
+        </div>
+      </div>
+  
+
+    
+  
+    <!-- Section Vidéos 
+    <div class="videos-gallery">
+      <h3>Démonstrations & Vidéos de Chantiers</h3>
+      <div class="video-grid">
+        <div class="video-item">
+          <video controls poster="images/video-thumb1.jpg">
+            <source src="WhatsApp Video 2026-11-05 at 11.25.09.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture vidéo.
+          </video>
+          <p>Travaux de terrassement en cours sur site</p>
+        </div>
+      </div>
+    </div>
+  </section>-->
+
+   <!-- Section Chiffres Clés / Statistiques -->
+<section class="stats-section">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-number">150+</span>
+        <p class="stat-label">Projets Réalisés</p>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">98%</span>
+        <p class="stat-label">Clients Satisfaits</p>
+      </div>
+    </div>
+  </section>
+
+    <!-- 2. PIED DE PAGE (FOOTER) -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; Société BTP. Tous droits réservés.</p>
+            
+            <!-- Liens Réseaux Sociaux -->
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://wa.me/224000000000" target="_blank" aria-label="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+<!-- Lien vers le fichier JavaScript pour le bouton du menu -->
+<script src="script.js"></script>
 </body>
 </html>
